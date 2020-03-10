@@ -193,3 +193,48 @@ true + false //1
 null + 1 //1
 undefined + 1 //1 Wrong, correct answer is NaN
 " \t \n" - 2 // -2 
+
+
+//comparisons lesson
+// < > >= <= == !=
+
+// A comparison result can be assigned to a variable just like any value
+let result = 5 > 4; // assign the result of the comparison
+alert( result ); // true
+
+
+//when comparing value of different types, JS converts the values to numbers
+
+//comparisons exercises
+5 > 4 //true
+"apple" > "pineapple" //true
+"2" > "12" ///false /// wrong. only converts to numbers if one of the vales is a number
+undefined == null //true
+undefined === null //false
+null == "\n0\n" //false
+null === +"\n0\n" //false
+
+
+//conditional operators
+//if
+let year = prompt('In which year was ECMAScript-2015 specification published?', '');
+
+if (year == 2015) alert( 'You are right!' );
+
+
+//conditional operators exercises
+
+let sleow = prompt('Whats the official name of javascript?', '');
+if (sleow == 'EMCAScript') {
+    alert('you are correct!');
+}
+else {
+    alert('wrong!');
+}
+
+
+let result;
+
+(a + b < 4) ? {
+  result = 'Below'; : result = 'Over';
+}
